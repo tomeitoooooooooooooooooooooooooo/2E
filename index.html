@@ -1,0 +1,280 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3E-ミニーちゃんのピザハウス</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-icon">🎀</span>
+                <span class="logo-text">ミニーちゃんのピザハウス</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">ホーム</a>
+                <a href="#menu" class="nav-link">メニュー</a>
+                <a href="#about" class="nav-link">お店について</a>
+                <a href="#location" class="nav-link">場所</a>
+                <a href="vote.html" class="nav-link">投票</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <!-- Background Video for Desktop/Tablet -->
+        <div class="video-background">
+            <video autoplay muted loop playsinline class="bg-video" id="bgVideo">
+                <source src="https://assets.mixkit.co/videos/preview/mixkit-chef-preparing-food-in-a-kitchen-4261-large.mp4" type="video/mp4">
+                <source src="https://assets.mixkit.co/videos/preview/mixkit-cooking-ingredients-on-a-kitchen-table-4262-large.mp4" type="video/mp4">
+                <!-- Fallback for browsers that don't support video -->
+            </video>
+            <div class="video-overlay"></div>
+        </div>
+        
+        <!-- Mobile Background -->
+        <div class="mobile-background"></div>
+        
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="title-main">ミニーちゃんの</span>
+                    <span class="title-sub">ピザハウス</span>
+                </h1>
+                <p class="hero-description">
+                    魔法のように美味しいピザで、みんなを笑顔にするよ！✨<br>
+                    可愛いスタジオで、特別なピザを作ってお待ちしています♪
+                </p>
+                <div class="hero-buttons">
+                    <a href="#menu" class="btn btn-primary">メニューを見る</a>
+                    <a href="vote.html" class="btn btn-secondary">投票</a>
+                    <a href="#location" class="btn btn-secondary">お店の場所</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="pizza-illustration">
+                    <div class="pizza-base"></div>
+                    <div class="pizza-toppings">🍕</div>
+                    <div class="sparkles">
+                        <span class="sparkle">✨</span>
+                        <span class="sparkle">⭐</span>
+                        <span class="sparkle">💫</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-decoration">
+            <div class="polka-dots"></div>
+        </div>
+    </section>
+
+    <!-- Featured Items -->
+    <section class="featured">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-icon">🌟</span>
+                今日のおすすめ
+                <span class="title-icon">🌟</span>
+            </h2>
+            <div class="featured-grid">
+                <div class="featured-item">
+                    <div class="item-image">🍕</div>
+                    <h3>ミニーちゃんスペシャル</h3>
+                    <p>チーズとハートの形のペパロニがたっぷり♪</p>
+                    <span class="price">¥450</span>
+                </div>
+                <div class="featured-item">
+                    <div class="item-image">🍕</div>
+                    <h3>リボンピザ</h3>
+                    <p>可愛いリボンの形をしたミニピザセット</p>
+                    <span class="price">¥350</span>
+                </div>
+                <div class="featured-item">
+                    <div class="item-image">🍕</div>
+                    <h3>ハッピーマルゲリータ</h3>
+                    <p>トマトとバジルで彩り豊か♪</p>
+                    <span class="price">¥400</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-icon">🎀</span>
+                メニュー
+                <span class="title-icon">🎀</span>
+            </h2>
+            
+            <div class="menu-category">
+                <h3 class="category-title">🍕 スペシャルピザ</h3>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-image">🍕</div>
+                        <div class="menu-item-content">
+                            <h4>マルゲリータピザ</h4>
+                            <p>チーズ、ハート型ペパロニ、ベル ペッパー</p>
+                            <span class="menu-price">¥150</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image">🍕</div>
+                        <div class="menu-item-content">
+                            <h4>明太子ポテトピザ</h4>
+                            <p>リボン型のミニピザ、チーズとトマト</p>
+                            <span class="menu-price">¥150</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image">🍕</div>
+                        <div class="menu-item-content">
+                            <h4>敵焼きチキンピザ</h4>
+                            <p>フレッシュトマト、モッツァレラ、バジル</p>
+                            <span class="menu-price">¥150</span>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">
+                        <span class="title-icon">🏠</span>
+                        ミニーちゃんのピザハウスについて
+                    </h2>
+                    <p class="about-description">
+                        こんにちは！ミニーだよ♪<br><br>
+                        
+                        私のスペシャルなピザハウスにようこそ！ここは私のお家とスタジオを合わせたような、
+                        とっても可愛い空間なの。壁にはピンクのリボンや水玉模様がいっぱい！<br><br>
+                        
+                        私たちのピザは、愛情をたっぷり込めて一枚一枚手作りしているの。
+                        ハート型のペパロニやリボンの形のピザなど、見た目も味も最高よ♪<br><br>
+                        
+                        文化祭でみんなに笑顔を届けたくて、このお店を開いたの。
+                        美味しいピザと一緒に、魔法のような素敵な時間を過ごしましょう✨
+                    </p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <span class="feature-icon">💕</span>
+                            <span>愛情たっぷり手作り</span>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">🎀</span>
+                            <span>可愛いデザイン</span>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">✨</span>
+                            <span>魔法のような体験</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="minnie-illustration">
+                        <div class="minnie-house">
+                            <div class="house-base"></div>
+                            <div class="house-roof"></div>
+                            <div class="house-door">🚪</div>
+                            <div class="house-windows">
+                                <span class="window">🪟</span>
+                                <span class="window">🪟</span>
+                            </div>
+                            <div class="house-decorations">
+                                <span class="decoration">🎀</span>
+                                <span class="decoration">💕</span>
+                                <span class="decoration">🌸</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="location" class="location">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-icon">📍</span>
+                お店の場所
+                <span class="title-icon">📍</span>
+            </h2>
+            <div class="location-content">
+                <div class="location-info">
+                    <div class="info-card">
+                        <h3>🏫 文化祭会場</h3>
+                        <p>駒大高校 3年E組教室</p>
+                        <p>📅 2025年9月27,28日（土）</p>
+                        <p>🕐 9:00 - 16:00</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>🗺️ アクセス</h3>
+                        <p>職員室右の階段を登って、2階の正面の教室だよ♪</p>
+                        <p>ピンクの風船とリボンが目印だよ！</p>
+                        <p>迷ったら、ミニーちゃんの歌声を頼りに来てね🎵</p>
+                    </div>
+                </div>
+                <div class="location-map">
+                    <div class="map-placeholder">
+                        <div class="map-content">
+                            <h4>🏫 校内マップ</h4>
+                            <div class="map-illustration">
+                                <div class="school-layout">
+                                    <div class="entrance">正門 🚪</div>
+                                    <div class="hallway">階段 ⬆</div>
+                                    <div class="classroom our-shop">
+                                        <span class="shop-marker">🎀</span>
+                                        <span>ミニーちゃんのピザハウス</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="map-note">階段を上がって正面にあるよ！</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-icon">🎀</span>
+                    <span class="logo-text">ミニーちゃんのピザハウス</span>
+                </div>
+                <div class="footer-info">
+                    <p>文化祭2025 | 3年E組</p>
+                    <p>📅 9月27,28日（土）9:00-16:00</p>
+                    <p>📍 駒大高校</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; Ⓒ 2025 ミニーちゃんのピザハウス. みんなで作った愛情たっぷりのお店です♪</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

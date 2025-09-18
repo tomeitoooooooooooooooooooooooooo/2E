@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>投票 - ミニーちゃんのピザハウス</title>
+    <link rel="stylesheet" href="vote.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-icon">🎀</span>
+                <span class="logo-text">ミニーちゃんのピザハウス</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">ホーム</a>
+                <a href="index.html#menu" class="nav-link">メニュー</a>
+                <a href="index.html#about" class="nav-link">お店について</a>
+                <a href="index.html#location" class="nav-link">場所</a>
+                <a href="vote.html" class="nav-link active">投票</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Vote Hero Section -->
+    <section class="vote-hero">
+        <div class="hero-decoration">
+            <div class="polka-dots"></div>
+        </div>
+        <div class="container">
+            <div class="vote-hero-content">
+                <h1 class="vote-title">
+                    <span class="title-icon">🗳️</span>
+                    みんなの投票
+                    <span class="title-icon">🗳️</span>
+                </h1>
+                <p class="vote-description">
+                    ミニーちゃんのピザハウスをもっと素敵にするために、<br>
+                    みんなの意見を聞かせてください♪
+                </p>
+                <div class="sparkles">
+                    <span class="sparkle">✨</span>
+                    <span class="sparkle">⭐</span>
+                    <span class="sparkle">💫</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vote Section -->
+    <section class="vote-section">
+        <div class="container">
+            <!-- Pizza Preference Vote -->
+            <div class="vote-category">
+                <h2 class="category-title">
+                    <span class="category-icon">🍕</span>
+                    お気に入りのピザは？
+                </h2>
+                <div class="vote-grid">
+                    <div class="vote-item" data-vote="pizza-special">
+                        <div class="vote-image">🍕</div>
+                        <h3>ミニーちゃんスペシャル</h3>
+                        <p>ハート型ペパロニがキュート♪</p>
+                        <div class="vote-count">
+                            <span class="count">0</span>
+                            <span class="label">票</span>
+                        </div>
+                        <button class="vote-btn">投票する</button>
+                    </div>
+                    <div class="vote-item" data-vote="pizza-ribbon">
+                        <div class="vote-image">🍕</div>
+                        <h3>リボンピザ</h3>
+                        <p>可愛いリボンの形♪</p>
+                        <div class="vote-count">
+                            <span class="count">0</span>
+                            <span class="label">票</span>
+                        </div>
+                        <button class="vote-btn">投票する</button>
+                    </div>
+                    <div class="vote-item" data-vote="pizza-margherita">
+                        <div class="vote-image">🍕</div>
+                        <h3>ハッピーマルゲリータ</h3>
+                        <p>トマトとバジルが爽やか♪</p>
+                        <div class="vote-count">
+                            <span class="count">0</span>
+                            <span class="label">票</span>
+                        </div>
+                        <button class="vote-btn">投票する</button>
+                    </div>
+                    <div class="vote-item" data-vote="pizza-dreamy">
+                        <div class="vote-image">🍕</div>
+                        <h3>ドリーミーピザ</h3>
+                        <p>パイナップルが南国風♪</p>
+                        <div class="vote-count">
+                            <span class="count">0</span>
+                            <span class="label">票</span>
+                        </div>
+                        <button class="vote-btn">投票する</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Drink Preference Vote -->
+            <div class="vote-category">
+                <h2 class="category-title">
+                    <span class="category-icon">🥤</span>
+                    お気に入りのドリンクは？
+                </h2>
+                <div class="vote-grid">
+                    <div class="vote-item" data-vote="drink-lemonade">
+                        <div class="vote-image">🥤</div>
+                        <h3>ピンクレモネード</h3>
+                        <p>甘酸っぱくて可愛い♪</p>
+                        <div class="vote-count">
+                            <span class="count">0</span>
+                            <span class="label">票</span>
+                        </div>
+                        <button class="vote-btn">投票する</button>
+                    </div>
+                    <div class="vote-item" data-vote="drink-soda">
+                        <div class="vote-image">🧃</div>
+                        <h3>キラキラソーダ</h3>
+                        <p>シュワシュワで爽快♪</p>
+                        <div class="vote-count">
+                            <span class="count">0</span>
+                            <span class="label">票</span>
+                        </div>
+                        <button class="vote-btn">投票する</button>
+                    </div>
+                    <div class="vote-item" data-vote="drink-cocoa">
+                        <div class="vote-image">☕</div>
+                        <h3>ホットココア</h3>
+                        <p>マシュマロで温かい♪</p>
+                        <div class="vote-count">
+                            <span class="count">0</span>
+                            <span class="label">票</span>
+                        </div>
+                        <button class="vote-btn">投票する</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- New Item Suggestion Vote -->
+            <div class="vote-category">
+                <h2 class="category-title">
+                    <span class="category-icon">💡</span>
+                    追加してほしいメニューは？
+                </h2>
+                <div class="vote-grid">
+                    <div class="vote-item" data-vote="new-dessert">
+                        <div class="vote-image">🍰</div>
+                        <h3>もっとデザート</h3>
+                        <p>可愛いケーキやクッキー♪</p>
+                        <div class="vote-count">
+                            <span class="count">0</span>
+                            <span class="label">票</span>
+                        </div>
+                        <button class="vote-btn">投票する</button>
+                    </div>
+                    <div class="vote-item" data-vote="new-pasta">
+                        <div class="vote-image">🍝</div>
+                        <h3>パスタメニュー</h3>
+                        <p>ピンク色のパスタ♪</p>
+                        <div class="vote-count">
+                            <span class="count">0</span>
+                            <span class="label">票</span>
+                        </div>
+                        <button class="vote-btn">投票する</button>
+                    </div>
+                    <div class="vote-item" data-vote="new-salad">
+                        <div class="vote-image">🥗</div>
+                        <h3>サラダメニュー</h3>
+                        <p>ヘルシーで彩り豊か♪</p>
+                        <div class="vote-count">
+                            <span class="count">0</span>
+                            <span class="label">票</span>
+                        </div>
+                        <button class="vote-btn">投票する</button>
+                    </div>
+                    <div class="vote-item" data-vote="new-sandwich">
+                        <div class="vote-image">🥪</div>
+                        <h3>サンドイッチ</h3>
+                        <p>持ち帰りにも便利♪</p>
+                        <div class="vote-count">
+                            <span class="count">0</span>
+                            <span class="label">票</span>
+                        </div>
+                        <button class="vote-btn">投票する</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Vote Results -->
+            <div class="vote-results">
+                <h2 class="results-title">
+                    <span class="title-icon">📊</span>
+                    投票結果
+                    <span class="title-icon">📊</span>
+                </h2>
+                <div class="results-summary">
+                    <div class="total-votes">
+                        <span class="total-count">0</span>
+                        <span class="total-label">総投票数</span>
+                    </div>
+                    <div class="thank-you-message">
+                        <p>みんなの投票ありがとう♪<br>結果を参考にして、もっと素敵なお店にするね！</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-icon">🎀</span>
+                    <span class="logo-text">ミニーちゃんのピザハウス</span>
+                </div>
+                <div class="footer-info">
+                    <p>文化祭2025 | 1年○組</p>
+                    <p>📅 3月15日（土）10:00-15:00</p>
+                    <p>📍 ○○高等学校</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 ミニーちゃんのピザハウス. みんなで作った愛情たっぷりのお店です♪</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="vote.js"></script>
+</body>
+</html>
